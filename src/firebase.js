@@ -3,9 +3,8 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const API_KEY = process.env.REACT_APP_YT_API_KEY;
 const firebaseConfig = {
-    apiKey:API_KEY ,
+    apiKey:process.env.REACT_APP_YT_API_KEY ,
     authDomain: "balagowda-yt-clone.firebaseapp.com",
     projectId: "balagowda-yt-clone",
     storageBucket: "balagowda-yt-clone.appspot.com",
