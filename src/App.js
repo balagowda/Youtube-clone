@@ -69,7 +69,7 @@ const App = () => {
         element={<Layout Children={<ChannelScreen/>} />}
       />
 
-      <Route path="*" element={<Navigate to="/home" />} />
+      <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   );
 };

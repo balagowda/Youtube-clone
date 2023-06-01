@@ -13,7 +13,7 @@ const LoginScreen = () => {
 
   const handleLogin = () => {
     // dispatch(login());
-    navigate('/');
+    navigate('/home');
   };
 
   // useEffect(()=>{
