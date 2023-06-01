@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNotifications, MdApps } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const Header = ({ handleToggleSidebar }) => {
   const [input, setInput] = useState('');
@@ -17,7 +17,7 @@ const Header = ({ handleToggleSidebar }) => {
     navigate(`/search/${input}`);
   }
 
-  const {photoURL} = useSelector(state=>state.auth?.user);
+  // const {photoURL} = useSelector(state=>state.auth?.user);
 
   return (
     <div className="header ">
@@ -47,7 +47,7 @@ const Header = ({ handleToggleSidebar }) => {
         <MdNotifications size={28} />
         <MdApps size={28} />
         <img
-          src={photoURL}
+          src={"https://cdn-icons-png.flaticon.com/512/6596/6596121.png"}
           alt=""
         />
       </div>

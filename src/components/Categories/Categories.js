@@ -10,13 +10,13 @@ const keyWord = [
   "All",
   "Coding",
   "Guiter",
+  "CSS",
   "Football",
-  "Poor Coder",
-  "Shwetabh",
+  "HTML",
   "AngularJs",
   "ReactJs",
-  "Algorith Art",
-  "Bengali Songs",
+  "Algoriths",
+  "Kannada Songs",
   "GitHub",
 ];
 

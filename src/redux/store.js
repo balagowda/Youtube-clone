@@ -6,12 +6,12 @@ import thunk from 'redux-thunk';
 
 import { channelVideosReducer, homeVideosReducer, relatedVideosReducer, searchVideosReducer,subscriptionChannelReducer } from "./reducers/video.reducer";
 import { selectedVideosReducer } from "./reducers/video.reducer";
-import { authReducer } from "./reducers/auth.reducer";
+// import { authReducer } from "./reducers/auth.reducer";
 import { channelDetailsReducer } from "./reducers/channel.reducer";
 import { commentListReducer } from "./reducers/comments.reducer";
 
 const rootReducer = combineReducers({
-    auth:authReducer,
+    // auth:authReducer,
    homeVideos: homeVideosReducer,
    selectedVideo:selectedVideosReducer,
    channelDetails:channelDetailsReducer,

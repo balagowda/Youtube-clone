@@ -16,7 +16,7 @@ const Comments = ({ videoId,totalComments }) => {
 
   const comments = useSelector((state) => state.commentList.comments);
 
-  const {photoURL} = useSelector(state=>state.auth?.user);
+  // const {photoURL} = useSelector(state=>state.auth?.user);
 
   const [text, setText] = useState('');
 
@@ -39,7 +39,7 @@ const Comments = ({ videoId,totalComments }) => {
       <p>{totalComments} comments</p>
       <div className='comments__form d-flex w-100 my-2'>
         <img
-          src={photoURL}
+          src={"https://cdn-icons-png.flaticon.com/512/6596/6596121.png"}
           alt='avatar'
           className='rounded-circle mr-3'
         />

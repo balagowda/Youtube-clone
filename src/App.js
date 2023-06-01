@@ -7,7 +7,7 @@ import "./_app.scss";
 
 import LoginScreen from "./Screen/LoginScreen/LoginScreen";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import WatchScreen from "./Screen/WatchScreen/WatchScreen";
 import SearchScreen from "./Screen/SearchScreen";
 import SubscriptionScreen from "./Screen/subscriptionScreen/SubscriptionScreen";
@@ -30,15 +30,18 @@ const Layout = ({ Children }) => {
 };
 
 const App = () => {
-  const { accessToken, loading } = useSelector((state) => state.auth);
+  // const { accessToken, loading } = useSelector((state) => state.auth);
+  const accessToken="jskdhfhsdk-dfjshd324654sdfskdnfkjh";
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!loading && !accessToken) {
+    if ( !accessToken) {
       navigate("/login");
     }
-  }, [accessToken, loading, navigate]);
+  }, [accessToken, navigate]);
+
+  //!loading && ,,,,loading,
 
   return (
     <Routes>

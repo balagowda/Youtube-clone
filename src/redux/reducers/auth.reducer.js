@@ -16,6 +16,7 @@ const initialState = {
   loading: false,
 }
 
+
 export const authReducer = (prevState = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
